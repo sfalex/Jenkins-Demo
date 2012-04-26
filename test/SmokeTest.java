@@ -15,6 +15,7 @@ public class SmokeTest extends TestingBotTestCase {
     
     // print sessionID in output so that our Jenkins plugin maps the sessionID to videos/screenshots
     System.out.println("TestingBotSessionID=" + this.selenium.getEval("selenium.sessionId"));
+    System.out.println("Salut Beau Gosse");
   }
 
   public void testGoogle() throws Exception {
