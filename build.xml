@@ -29,7 +29,7 @@
 
     <target name="junit" depends="serve">
 				
-        <javac srcdir="test" destdir="test">
+        <javac srcdir="test" destdir="test" includeantruntime="false">
 					<classpath path="lib/TestingBot-0.0.1.jar"/>
           <classpath path="lib/selenium-java-client-driver.jar"/>
           <classpath path="lib/junit-4.10.jar"/>
