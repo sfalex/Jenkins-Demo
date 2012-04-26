@@ -11,7 +11,7 @@ public class SmokeTest extends TestingBotTestCase {
             "http://www.google.com/");
 
     this.selenium = selenium;
-    selenium.start("version=10;platform=WINDOWS;screenshot=false");
+    selenium.start("version=10;platform=WINDOWS;screenrecorder=false");
     
     // print sessionID in output so that our Jenkins plugin maps the sessionID to videos/screenshots
     System.out.println("TestingBotSessionID=" + this.selenium.getEval("selenium.sessionId"));
