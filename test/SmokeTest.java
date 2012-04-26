@@ -24,8 +24,7 @@ public class SmokeTest extends TestingBotTestCase {
     this.selenium.fireEvent("//*[@id=\"userUsername\"]", "blur");
     this.selenium.type("//*[@id=\"userPassword\"]", "311088");
     this.selenium.fireEvent("//*[@id=\"userPassword\"]", "blur");
-    this.selenium.waitForPageToLoad("30000");
-    this.selenium.click("css=body div#container div#content form#form.pretty div.group input");
+    this.selenium.click("css=input[type=\"image\"]");
     this.selenium.waitForPageToLoad("30000");
   }
 
