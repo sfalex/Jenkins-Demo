@@ -18,7 +18,7 @@ public class SmokeTest extends TestingBotTestCase {
   }
 
   public void testLogin() throws Exception {
-    this.selenium.open("/pp.myerp.com/index.jsp?locale=en_US");
+    this.selenium.open("https://pp.myerp.com/index.jsp?locale=en_US");
     assertEquals("Sign In | myERP.com", this.selenium.getTitle());
     this.selenium.type("//*[@id=\"userUsername\"]", "alex.myerp@gmail.com");
     this.selenium.fireEvent("//*[@id=\"userUsername\"]", "blur");
